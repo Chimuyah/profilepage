@@ -13,7 +13,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Column(
         children: <Widget>[
           Image.asset(
@@ -35,14 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text(
                             "Ninlawan Chomchuean",
                             style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.w900
-                            ),
+                                fontSize: 25, fontWeight: FontWeight.w900),
                           ),
                           Text(
                             'Nickname : Nin\n'
-                            'Age : 23',
-                            
+                            'Age : 23\n'
+                            'Birthday : 01/05/2000',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -51,59 +48,53 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-                    
-                    
                   ],
                 ),
                 SizedBox(
                   height: 30,
                 ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: 10,
-                    right: 10,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          Icon(
-                            Icons.map_outlined,
-                            color: Color.fromARGB(255, 255, 123, 244),
-                            size: 40,
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "Address",
-                            style: TextStyle(
-                              fontSize: 20,
-                            ),
-                          ),
-                        ],
-                      ),
-                     
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  '1295/1 Khwanmueangsri Dormitory\nSisaket Province 33000\n'
-                  'Telephone number : 0640193975',
-                  
-                  
-                ) 
-                  
               ],
-              
             ),
           ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 10,
+              right: 10,
+            ),
+            child: Row(
+              
+              children: [
+                Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.map_outlined,
+                      color: Color.fromARGB(255, 255, 123, 244),
+                      size: 40,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Address",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                    SizedBox(
+            height: 20,
+          ),
+          Text(
+            '1295/1 Khwanmueangsri Dormitory\nSisaket Province 33000\n'
+            'Telephone number : 0640193975',
+          )
+                  ],
+                ),
+              ],
+            ),
+          ),
+          
         ],
-      ), 
+      ),
     );
   }
 }
